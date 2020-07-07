@@ -1,0 +1,347 @@
+/* *******************Gereneral Formatting***************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    /* padding:2rem; */
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
+  /* **************Global Variables****************** */
+  
+  :root {
+    --light-ash-color: #d3d3de;
+    --dark-ash-color: #272a31;
+    --dark-orange-color: #ec5242;
+  }
+  
+  /* ************************Utilities**************************** */
+  /* Background Colors */
+  .bg-dark-orange {
+    background-color: var(--dark-orange-color);
+  }
+  
+  .bg-light-ash {
+    background-color: var(--light-ash-color);
+  }
+  
+  .bg-dark-ash {
+    background-color: var(--dark-ash-color);
+  }
+  /* Colors */
+  .text-dark-orange {
+    color: var(--dark-orange-color);
+  }
+  
+  .text-light-ash {
+    color: var(--light-ash-color);
+  }
+  
+  .text-dark-ash {
+    color: var(--dark-ash-color);
+  }
+  
+  .navigation-social-container {
+    position: relative;
+    background-color: var(--dark-ash-color);
+    width: 100%;
+    height: 40px;
+    /* background-color: #777; */
+  }
+  
+  .nav-social {
+    width: 45%;
+    /* background-color: var(--light-ash-color); */
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 50px;
+    height: 40px;
+    background-color: lightgray;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+  }
+  
+  .nav-social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    /* z-index: 3000000; */
+  
+  }
+  
+  /* .s-icon {
+    color: red;
+  } */
+  
+  .nav-social ul li {
+    margin: 0 10px;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    text-decoration-color: var(--bg-dark-orange);
+  }
+  
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    /* background-color: green; */
+  }
+  
+  .rounded-logo {
+    border: 2px solid gray;
+    /* background-color: red; */
+    border-radius: 100%;
+  
+    /* z-index: 20000; */
+  }
+  
+  .logo-container {
+    padding-left: 5%;
+    width: 30%;
+    /* background-color: yellow; */
+  }
+  
+  .navigation-links-container {
+    width: 67%;
+  }
+  
+  .navigation-links-container li a {
+    color: #777;
+  }
+  
+  .nav-wrapper .navigation-links-container ul {
+    display: flex;
+    /* width: 45%; */
+    margin-right: 10%;
+    /* background-color: yellow; */
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .border-AfDev {
+    border: 2px solid var(--dark-orange-color);
+    padding: 4px;
+  }
+  
+  .computer-container-hello {
+    height: 25vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(39, 42, 49, 0.8),
+        rgba(211, 211, 222, 0.8)
+      ),
+      url(../images/computer-image.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20%;
+  }
+  
+  .computer-container-hello h1 {
+    font-size: 70px;
+    font-weight: 600;
+  
+  }
+  
+  .container-AfDev-Summit {
+    height: 85vh;
+    background-image: linear-gradient(
+      to left top,
+      rgba(247, 247, 247, 0.8),
+      rgba(211, 211, 222, 0.8)
+    ),
+     url(../images/house-image.jpg);
+      background-size: cover;
+      background-position: center; */
+  }
+  
+  .container-AfDev-Summit  div {
+    padding-left: 20%;
+  }
+  
+  .welcome-text {
+    display: flex;
+    /* padding-left: 20%; */
+    flex-direction: column;
+  }
+  
+  .main-program {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .AfDev-logo {
+    display: inline-block;
+    /* background-color: red; */
+    border-radius: 100%;
+    padding: 4px;
+    margin-top: 3px;
+    border: 3px solid gray;
+  }
+  
+  .summit-2020 {
+    display: block;
+    /* background-color: green; */
+    margin-left: 18%;
+    margin-top: -10px;
+  }
+  
+  /* .ubuntu {
+    position: absolute;
+   top: 70%;
+   background-color: green;
+   height: 90px;
+  } */
+  
+  .text-width-discription {
+    width: 65%;
+    padding: 15px;
+    /* background-color: green; */
+  }
+  
+  .border-p {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    /* background-color: greenyellow; */
+  }
+  
+   .container-75 {
+    position: relative;
+    height: 75vh;
+  } 
+  
+  .row-1 {
+    display: flex;
+  }
+  
+  .flags {
+    width:30px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  
+  .center-item {
+    margin: 0 auto;
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container-75  {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    /* align-items: space-around; */
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .featured-speakers-flex {
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+  }
+  
+  .featured-speakers-container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: indigo;
+  }
+  
+  .speaker-img-container {
+    position: relative;
+    display: flex;
+    width: 300px;
+   
+    /* background-color: hotpink; */
+  }
+  
+  .backgrd-img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .front-img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  
+  .div-trail-1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+  }
+  
+  .speaker-text p {
+    text-justify: distribute;
+  }
+  
+  .partner-names{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  
+  .partner-names p:hover {
+    color: var(--dark-orange-color);
+  }
+  
+  .footer-2 {
+    padding-left: 20%;
+    height: 80px;
+  }
+  
+  .summit-footer {
+    margin-left: 5px;
+    padding-top: 3px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .mobile-hide {
+      display: none;
+    }
+  
+    .computer-container-hello {
+      padding-left: 3%;
+      width: 100%;
+      /* font-size: 20px; */
+    }
+  
+    .computer-container-hello h1 {
+      font-size: 35px;
+      font-weight: 400;
+    
+    }
+}
