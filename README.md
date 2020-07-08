@@ -13,7 +13,7 @@ This HTML & CSS Capstone Project is an online fictitious Developer website calle
 
 [LIVE DEMO LINK](https://rawcdn.githack.com/Alaska01/Capstone-AfDev-Summit/9c9ce5b0c7e8505352325f60161b08b6d2bdacf7/index.html)
 
-[LIVE DEMO LINK CAPSTONE VIDEO PRESENTATION](https://www.loom.com/my-videos)
+[LIVE DEMO LINK CAPSTONE VIDEO PRESENTATION](https://www.loom.com/share/6f2925e149c7437983b2b6b3e7de3c8e)
 
 ## Work Done 🔧
 
