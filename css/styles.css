@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -67,14 +67,12 @@ ul li {
 
 .nav-social {
   width: 45%;
-  /* background-color: var(--light-ash-color); */
   position: absolute;
   right: 0;
   top: 0;
   border-top-right-radius: 50px;
   height: 40px;
   background-color: lightgray;
-  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%); */
   clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
 }
 
@@ -83,12 +81,15 @@ ul li {
   justify-content: center;
   align-items: center;
   height: 40px;
-  /* z-index: 3000000; */
 }
 
-/* .s-icon {
-  color: red;
-} */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  height: 120px;
+}
 
 .nav-social ul li {
   margin: 0 10px;
@@ -99,9 +100,16 @@ a:hover {
   text-decoration-color: var(--bg-dark-orange);
 }
 
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
 .computer-container-hello {
   height: 25vh;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right bottom,
       rgba(39, 42, 49, 0.8),
       rgba(211, 211, 222, 0.8)
@@ -113,17 +121,20 @@ a:hover {
   display: flex;
   align-items: flex-end;
   padding-left: 5%;
+  box-sizing: border-box;
 }
 
 .computer-container-hello h1 {
   font-size: 35px;
   font-weight: 400;
   padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .container-AfDev-Summit {
-  min-height: 85vh;
-  background-image: linear-gradient(
+  min-height: auto;
+  background-image:
+    linear-gradient(
       to left top,
       rgba(247, 247, 247, 0.8),
       rgba(211, 211, 222, 0.8)
@@ -136,6 +147,7 @@ a:hover {
 .container-AfDev-Summit div {
   padding: 0 5%;
   font-size: 20px;
+  box-sizing: border-box;
 }
 
 .welcome-text h1,
@@ -146,37 +158,48 @@ a:hover {
 .text-width-discription {
   width: 100%;
   padding: 15px;
+  box-sizing: border-box;
 }
 
 .main-mobile-program {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
   height: auto;
   padding: 0 5%;
+  box-sizing: border-box;
   background-color: var(--dark-ash-color);
-  /* border: 3px solid green; */
 }
 
 .main-cont-wrapper {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+
+.main-cont-wrapper h6 {
+  font-size: 30px;
 }
 
 .border-p {
   border: 1px solid white;
   padding: 5px;
   border-radius: 5px;
-  /* background-color: greenyellow; */
+  box-sizing: border-box;
 }
 
 .underline-main {
-  width: 10%;
+  width: 6%;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .flags-1 {
   width: 30px;
   height: 30px;
-  /* margin: 0 auto; */
   border-radius: 50%;
 }
 
@@ -188,6 +211,9 @@ a:hover {
   width: 95%;
   margin: 5px;
   background-color: var(--light-ash-color);
+  border-radius: 5px;
+  padding-left: 5px;
+  box-sizing: border-box;
 }
 
 .m-program {
@@ -195,15 +221,20 @@ a:hover {
   padding-bottom: 25px;
 }
 
+.date-afdev p {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
 .attend-summit {
   display: flex;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   height: 100px;
   width: 80%;
   justify-content: center;
   align-items: center;
-  margin: 25px;
-  /* background-color: seagreen; */
+  border-radius: 5px;
 }
 
 .image-container-trail {
@@ -216,7 +247,7 @@ a:hover {
   width: 120px;
   height: 120px;
   padding: 10px;
-  /* position: absolute; */
+  box-sizing: border-box;
 }
 
 .image-dan {
@@ -224,7 +255,7 @@ a:hover {
   height: 150px;
   position: absolute;
   top: 15%;
-  left: 30px;  /* transform: translate(-50%, -50%); */
+  left: 30px;
 }
 
 .feature-flex-1 {
@@ -245,12 +276,41 @@ a:hover {
   font-size: 16px;
 }
 
+.center-item {
+  margin: 0 auto;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+}
+
+.center-item h6 {
+  font-size: 25px;
+}
+
 .partner-names p:hover {
   color: var(--dark-orange-color);
 }
 
 /* Desktop and Other Devices */
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .computer-container-hello h1 {
+      font-size: 40px;
+      font-weight: 400;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .footer-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+      height: 120px;
+    }
+  }
+
   .desktop-hide {
     display: none;
   }
@@ -259,21 +319,17 @@ a:hover {
     display: flex;
     justify-content: space-between;
     height: 60px;
-    /* background-color: green; */
   }
 
   .rounded-logo {
     border: 2px solid gray;
-    /* background-color: red; */
     border-radius: 100%;
-
-    /* z-index: 20000; */
   }
 
   .logo-container {
     padding-left: 5%;
     width: 30%;
-    /* background-color: yellow; */
+    box-sizing: border-box;
   }
 
   .navigation-links-container {
@@ -286,9 +342,7 @@ a:hover {
 
   .nav-wrapper .navigation-links-container ul {
     display: flex;
-    /* width: 45%; */
     margin-right: 10%;
-    /* background-color: yellow; */
     justify-content: space-around;
     align-items: center;
     height: 60px;
@@ -297,11 +351,13 @@ a:hover {
   .border-AfDev {
     border: 2px solid var(--dark-orange-color);
     padding: 4px;
+    box-sizing: border-box;
   }
 
   .computer-container-hello {
     height: 25vh;
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         to right bottom,
         rgba(39, 42, 49, 0.8),
         rgba(211, 211, 222, 0.8)
@@ -313,6 +369,7 @@ a:hover {
     display: flex;
     align-items: flex-end;
     padding-left: 20%;
+    box-sizing: border-box;
   }
 
   .computer-container-hello h1 {
@@ -321,9 +378,9 @@ a:hover {
   }
 
   .container-AfDev-Summit {
-    /* min-height: 85vh; */
     height: auto;
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         to left top,
         rgba(247, 247, 247, 0.8),
         rgba(211, 211, 222, 0.8)
@@ -335,11 +392,11 @@ a:hover {
 
   .container-AfDev-Summit div {
     padding-left: 20%;
+    box-sizing: border-box;
   }
 
   .welcome-text {
     display: flex;
-    /* padding-left: 20%; */
     flex-direction: column;
   }
 
@@ -351,50 +408,35 @@ a:hover {
 
   .AfDev-logo {
     display: inline-block;
-    /* background-color: red; */
     border-radius: 100%;
     padding: 4px;
+    box-sizing: border-box;
     margin-top: 3px;
     border: 3px solid gray;
   }
 
   .summit-2020 {
     display: block;
-    /* background-color: green; */
     margin-left: 18%;
     margin-top: -10px;
   }
 
-  /* .ubuntu {
-  position: absolute;
- top: 70%;
- background-color: green;
- height: 90px;
-} */
-
   .text-width-discription {
     width: 65%;
     padding: 15px;
-    /* background-color: green; */
   }
 
   .border-p {
     border: 2px solid white;
     padding: 10px;
     border-radius: 5px;
-    /* background-color: greenyellow; */
+    box-sizing: border-box;
   }
-
-  /* .container-75 {
-    position: relative;
-    height: 75vh;
-  } */
 
   .container-75 {
     display: flex;
     flex-direction: column;
     height: 75vh;
-    /* align-items: space-around; */
     justify-content: space-around;
     width: 60%;
     margin: 0 auto;
@@ -413,10 +455,13 @@ a:hover {
 
   .center-item {
     margin: 0 auto;
-    /* background-color: greenyellow; */
     display: flex;
     height: 50px;
     justify-content: center;
+  }
+
+  .center-item h6 {
+    font-size: 30px;
   }
 
   .featured-speakers-flex {
@@ -437,14 +482,11 @@ a:hover {
     display: flex;
     width: 250px;
     margin: 10px;
-
-    /* background-color: hotpink; */
   }
 
   .backgrd-img {
     width: 70px;
     height: 70px;
-    /* padding: 10px; */
   }
 
   .front-img {
@@ -464,7 +506,6 @@ a:hover {
 
   .speaker-text p {
     width: 100%;
-    /* background-color: green; */
   }
 
   .partner-names {
@@ -482,19 +523,22 @@ a:hover {
   .footer-2 {
     padding-left: 20%;
     height: 80px;
+    box-sizing: border-box;
   }
 
   .summit-footer {
     margin-left: 5px;
     padding-top: 3px;
+    box-sizing: border-box;
   }
 
-  .lecture-items-wrapper{
+  .lecture-items-wrapper {
     display: flex;
-    /* flex-wrap: wrap; */
-    width: 70%;
+    width: 90%;
     justify-content: center;
     margin: 0 auto;
+    height: auto;
+    align-items: center;
   }
 
   .lecture-items {
@@ -504,27 +548,48 @@ a:hover {
     height: auto;
     width: 40%;
     align-items: center;
-    /* width: 95%; */
     margin: 5px;
     background-color: var(--light-ash-color);
     border-radius: 5px;
     padding: 7px;
+    box-sizing: border-box;
   }
 }
 
 @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 300) and (max-width: 500px) {
+    .hide-bl-500 {
+      display: none;
+    }
+  }
+
   .mobile-hide {
     display: none;
   }
 
   .computer-container-hello {
     padding-left: 3%;
+    box-sizing: border-box;
     width: 100%;
-    /* font-size: 20px; */
   }
 
   .computer-container-hello h1 {
     font-size: 35px;
     font-weight: 400;
+  }
+
+  .AfDev-logo {
+    display: inline-block;
+    border-radius: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    border: 3px solid gray;
+  }
+
+  .summit-2020 {
+    display: block;
+    margin-left: 18%;
+    margin-top: -10px;
   }
 }

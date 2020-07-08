@@ -11,12 +11,13 @@
 .box-1 {
   grid-column: 1/2;
   grid-row: 1/-1;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right bottom,
       rgba(39, 42, 49, 0.8),
       rgba(211, 211, 222, 0.8)
     ),
-    url(../images/welcome\-a.JPG);
+    url(../images/welcome1.JPG);
   background-size: cover;
   background-position: center;
 }
@@ -24,18 +25,111 @@
 .box-2 {
   grid-column: 2/-1;
   grid-row: 1/-1;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right bottom,
       rgba(39, 42, 49, 0.8),
       rgba(211, 211, 222, 0.8)
     ),
-    url(../images/computer-image.jpg);
+    url(../images/welcome2.JPG);
   background-size: cover;
-  background-position: center;
+  background-position: right;
 }
 
 .delegates-2019 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.m-program {
+  width: 90%;
+  height: auto;
+}
+
+.main-mobile-program-about {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    );
+}
+
+.attend-summit-about {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+
+.date-afdev p {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.text-width-discription {
+  width: 70%;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.about-chairperson {
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.lecture-items-wrapper {
+  width: 100%;
+}
+
+.container-AfDev-Summit div {
+  padding-left: 20%;
+  box-sizing: border-box;
+}
+
+.border-p {
+  margin-left: -40%;
+}
+
+.welcome-text {
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+.main-cont-wrapper h6 {
+  font-weight: 17px;
+  padding-top: 10px;
+  height: auto;
+}
+
+.AfDev-logo {
+  display: inline-block;
+  border-radius: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  margin-top: 3px;
+  border: 3px solid gray;
+}
+
+.h6-border {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.box-b {
+  grid-column: 2/-1;
+  grid-row: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  /* z-index: 7; */
 }
