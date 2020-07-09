@@ -8,6 +8,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.menu-position {
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+
 .hero-section {
   height: auto;
   background-image:
@@ -19,6 +25,7 @@ body {
     url(../images/house-image.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .overlay {

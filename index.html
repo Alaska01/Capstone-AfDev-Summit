@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,17 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
             integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="menu/style.css">
+        <link rel="stylesheet" href="menu/menu.css">
         <title>AfDev Home Page</title>
     </head>
 
     <body> 
       <header class="header">
+        
+        
           <div class="navigation-social-container mobile-hide">
             
               <div class="nav-social">
@@ -31,7 +36,8 @@
 
         <nav class="nav-wrapper mobile-hide">
             <div class="logo-container">
-                <span class="AfDev-logo">AfDEV</span> <span class="">AfDEV Continental</span> 
+              <a class="text-dark-ash" href="index.html"><span class="AfDev-logo">AfDEV</span></a>
+                 <span class="">AfDEV Continental</span> 
                 <span class="summit-2020">Summit 2020</span>
             </div>
             <div class="navigation-links-container mr-5">
@@ -49,18 +55,56 @@
         </header>
 
           <main>
-
+           
             <!-- ********HEllO UBUNTU ***************** -->
             <div class="computer-container-hello">
+              <div class="bootstrap-menu desktop-hide menu-position">
+                <!-- **********Bootstrap Hamburger************** -->
+                 <!--Navbar-->
+                 <nav class="navbar navbar-light navbar-1 white">
+     
+                   <!-- Navbar brand -->
+                 
+     
+                   <!-- Collapse button -->
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+                     aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+     
+                   <!-- Collapsible content -->
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+     
+                     <!-- Links -->
+                     <ul class="navbar-nav mr-auto">
+                       <li class="nav-item active">
+                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="about.html">About</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="tickets.html">Tickets</a>
+                       </li>
+                     </ul>
+                     <!-- Links -->
+     
+                   </div>
+                   <!-- Collapsible content -->
+     
+                 </nav>
+                 <!--/.Navbar-->
+     
+                 <!-- ****************End of Bootstrap Hamburger********************** -->
+             </div>
+              
                 <h1 class="text-dark-orange ubuntu">Hello!! Ubuntu Africa!!!!</h1>
             </div>
 
             <!-- ********African Dev Summit************ -->
             <div class="container-AfDev-Summit">
                 <div class="welcome-text" >
-                    <h1 class="text-dark-orange">African Dev Continental Summit</h1>
+                    <h1 class="text-dark-orange pt-3">African Dev Continental Summit</h1>
                     <h1 class="text-dark-orange">Welcome's You To Makurdi</h1>
-                    <h1 class="text-dark-orange">2020</h1>
+                    <h1 class="text-dark-orange pb-3">2020</h1>
                 </div>
                 <div class="text-width-discription">
                     <p class="border-p">The African Dev(AfDEV) Continental Summit is a biannual conference held in Makurdi, Benue State, where tech giants interact with business tycoons to profer IT solutions to various economic challenges in Africa. This concept was pioneered by <strong>Engr Aye Daniel Asoo (MNSE, COREN).</strong></p>
@@ -75,19 +119,19 @@
             <!-- ***********Main Section For Mobile************** -->
             <div class="main-mobile-program ">
               <div class="m-program ">
-                <div class="main-cont-wrapper "><h6>Main Program</h6></div>
-                <hr class="bg-dark-orange underline-main">
-                <div class="lecture-items-wrapper">
+                <div class="main-cont-wrapper "><h6 class="">Main Program</h6></div>
+                <hr class="bg-dark-orange underline-main mt-2">
+                <div class="lecture-items-wrapper py-3">
                 <div class="lecture-items">
                   <div>
-                    <img class="flags-1" src="images/UK-flag.webp" alt="pics">
+                    <img class="flags-1" src="images/nigerian-flag.png" alt="pics">
                   </div>
                   
-                  <div class=" px-3">
+                  <div class="px-3">
                     <p>Lecture</p>
                   </div>
                   
-                  <div class="">
+                  <div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipis icing elit. Ipsam repellat fugit nisi.</p>
 
                   </div>
@@ -98,14 +142,14 @@
                 <div class="lecture-items">
                  
                   <div>
-                    <img class="flags-1" src="images/UK-flag.webp" alt="pics">
+                    <img class="flags-1" src="images/kenya-flag.png" alt="pics">
                   </div>
                   
-                  <div class=" px-3">
+                  <div class="px-3">
                     <p>Lecture</p>
                   </div>
                   
-                  <div class="">
+                  <div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipis icing elit. Ipsam repellat fugit nisi.</p>
 
                   </div>
@@ -115,14 +159,14 @@
 
                 <div class="lecture-items">
                   <div>
-                    <img class="flags-1" src="images/UK-flag.webp" alt="pics">
+                    <img class="flags-1" src="images/lithinian-flag.png" alt="pics">
                   </div>
                   
-                  <div class=" px-3">
+                  <div class="px-3">
                     <p>Lecture</p>
                   </div>
                   
-                  <div class="">
+                  <div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipis icing elit. Ipsam repellat fugit nisi.</p>
 
                   </div>
@@ -132,14 +176,14 @@
 
                 <div class="lecture-items">
                   <div>
-                    <img class="flags-1" src="images/UK-flag.webp" alt="pics">
+                    <img class="flags-1" src="images/moldova.png" alt="pics">
                   </div>
                   
-                  <div class=" px-3">
+                  <div class="px-3">
                     <p>Lecture</p>
                   </div>
                   
-                  <div class="">
+                  <div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipis icing elit. Ipsam repellat fugit nisi.</p>
 
                   </div>
@@ -152,11 +196,11 @@
                     <img class="flags-1" src="images/UK-flag.webp" alt="pics">
                   </div>
                   
-                  <div class=" px-3">
+                  <div class="px-3">
                     <p>Lecture</p>
                   </div>
                   
-                  <div class="">
+                  <div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipis icing elit. Ipsam repellat fugit nisi.</p>
 
                   </div>
@@ -164,8 +208,8 @@
 
               </div>
 
-              <div class="center-item"><h6>See Program</h6></div> 
-              <hr class="bg-dark-orange underline-main">
+              <div class="center-item"><h6 class="pt-3">See Program</h6></div> 
+              <hr class="bg-dark-orange underline-main mt-3">
                 <!-- Attend AfDev Continental Summit 2020 -->
                 <div class="attend-summit bg-dark-orange desktop-hide">
                   <p class="text-light pl-3">Attend AfDev Continental Summit 2020</p>
@@ -180,7 +224,7 @@
               <!-- *************Main Program SECTION***************** -->               
                 
                     
-            <!-- </div> -->
+            
 
             <!-- ***********Featured Speakers Container*********** -->
            
@@ -188,8 +232,8 @@
               <!-- Mobile Featured Speakers Section -->
 
                             
-              <div class="center-item"><h6>Featured Speakers</h6></div>
-              <hr class="bg-dark-orange underline-main">
+              <div class="center-item"><h6 class="pt-4">Featured Speakers</h6></div>
+              <hr class="bg-dark-orange underline-main mt-4">
 
               <div class="feature-wrapper-2 desktop-hide">
 
@@ -202,7 +246,7 @@
                  <div class="text-jens">
                    <h6>Jens Riedle</h6>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   <p class="hide-bl-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                      <span class="hide-bl-500">Iure, deserunt at? Aliquam dignissimos, ad hic error assumenda sed omnis! Quos.</span></p>
                  </div>
     
@@ -217,7 +261,7 @@
                  <div class="text-jens">
                    <h6>Jens Riedle</h6>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   <p class="hide-bl-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                      <span class="hide-bl-500">Iure, deserunt at? Aliquam dignissimos, ad hic error assumenda sed omnis! Quos.</span></p>
                  </div>
     
@@ -329,8 +373,8 @@
 
         <footer>
           <div class="footer-1 bg-dark-ash">
-            <div class="center-item"><h6>Partners</h6></div>
-            <hr class="bg-dark-orange underline-main">
+            <div class="center-item"><h6 class="pt-4">Partners</h6></div>
+            <hr class="bg-dark-orange underline-main mt-4">
             <div class="partner-names">
               <p>Facebook</p>
               <p>Google</p>
@@ -342,19 +386,14 @@
 
           </div>
 
-          <div class="footer-2">
-
-            
-          </div>
-
           <div class="footer-container">
-            <div>
-              <span class="AfDev-logo">AfDEV</span>
+            <div class="ft-mr">
+              <a class="text-dark-ash" href="index.html"><span class="AfDev-logo">AfDEV</span></a>
               <span class="">Get Inspired @ AfDEV</span>
               <span class="d-block">Summit 2020</span>  
             </div>
 
-            <div class="">
+            <div class=" hide-bl-400">
               <span class="mobile-hide">AfDev Summit 2020 reserves the right to all delivered contents at summit.</span>
               <span class="d-block mobile-hide"> Call Ayankaa Nehemiah, also follow The Celebration Hub.</span>
             </div>

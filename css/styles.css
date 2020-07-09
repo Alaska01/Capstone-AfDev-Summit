@@ -13,6 +13,11 @@ body {
   color: #777;
 }
 
+/* ****************Ubuntu is a free alternative font similar to Cocogoose*************** */
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -83,12 +88,19 @@ ul li {
   height: 40px;
 }
 
+.menu-position {
+  position: absolute;
+  left: 5px;
+  top: -4%;
+}
+
 .footer-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 0;
   padding: 0;
-  height: 120px;
+  height: 100px;
 }
 
 .nav-social ul li {
@@ -267,13 +279,23 @@ a:hover {
   margin-left: 80px;
 }
 
+.footer-1 {
+  height: auto;
+}
+
 .partner-names {
   width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.ft-mr {
+  margin-left: 10px;
 }
 
 .center-item {
@@ -294,6 +316,11 @@ a:hover {
 /* Desktop and Other Devices */
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
   @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .ubuntu {
+      font-size: 23px;
+      padding-top: 3px;
+    }
+
     .computer-container-hello h1 {
       font-size: 40px;
       font-weight: 400;
@@ -307,7 +334,8 @@ a:hover {
       justify-content: space-around;
       margin: 0;
       padding: 0;
-      height: 120px;
+      height: 90px;
+      box-sizing: border-box;
     }
   }
 
@@ -514,16 +542,11 @@ a:hover {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
+    height: auto;
   }
 
   .partner-names p:hover {
     color: var(--dark-orange-color);
-  }
-
-  .footer-2 {
-    padding-left: 20%;
-    height: 80px;
-    box-sizing: border-box;
   }
 
   .summit-footer {
@@ -541,6 +564,7 @@ a:hover {
     align-items: center;
   }
 
+  /* ****** lecture-items is a child of lecture-items-wrapper ***** */
   .lecture-items {
     display: flex;
     flex-direction: column;
@@ -557,6 +581,20 @@ a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 330) {
+    .hide-bl-400 {
+      display: none;
+    }
+
+    .partner-names p {
+      padding: 0 5px;
+    }
+
+    .AfDev-logo {
+      margin-top: 3px;
+    }
+  }
+
   @media only screen and (min-width: 300) and (max-width: 500px) {
     .hide-bl-500 {
       display: none;
@@ -591,5 +629,15 @@ a:hover {
     display: block;
     margin-left: 18%;
     margin-top: -10px;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    height: 120px;
+    box-sizing: border-box;
   }
 }

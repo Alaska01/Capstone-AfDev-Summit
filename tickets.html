@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
             integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/tickets.css">
         <title>About AfDev Tickets</title>
@@ -32,14 +33,15 @@
 
         <nav class="nav-wrapper mobile-hide">
             <div class="logo-container">
-                <span class="AfDev-logo">AfDEV</span> <span class="">AfDEV Continental</span> 
+              <a class="text-dark-ash" href="index.html"><span class="AfDev-logo">AfDEV</span></a>
+              <span class="">AfDEV Continental</span> 
                 <span class="summit-2020">Summit 2020</span>
             </div>
             <div class="navigation-links-container">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Program</a></li>
-                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#">Sponsor</a></li>
                     <li><a href="#">New</a></li>
                     <li><a class="border-AfDev" href="#">AfDev Summit</a></li>
@@ -53,6 +55,43 @@
 
              <!-- Hero Section -->
     <section class="hero-section">
+      <div class="bootstrap-menu desktop-hide menu-position">
+        <!-- **********Bootstrap Hamburger************** -->
+         <!--Navbar-->
+         <nav class="navbar navbar-light navbar-1 white">
+
+           <!-- Navbar brand -->
+         
+
+           <!-- Collapse button -->
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+             aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+           <!-- Collapsible content -->
+           <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+
+             <!-- Links -->
+             <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="about.html">About</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="tickets.html">Tickets</a>
+               </li>
+             </ul>
+             <!-- Links -->
+
+           </div>
+           <!-- Collapsible content -->
+
+         </nav>
+         <!--/.Navbar-->
+
+         <!-- ****************End of Bootstrap Hamburger********************** -->
+     </div>
         <div class="overlay">
         
            <div class="main-head">
@@ -78,26 +117,30 @@
                 <td>20th-26st Dec</td>
                 <td>21st Dec (Wed)</td>
               </tr>
+              
               <tr>
                 <td>Guest Speaker</td>
-                <td class="orange">#15,000 <input type="radio" name="guest-speaker"/></td>
-                <td  class="orange">#5,000 <input type="radio" name="guest-speaker"/></td>
-                <td  class="orange">#10,000 <input type="radio" name="guest-speaker"/></td>
-                <td  class="orange"><s>#0</s> <input type="radio" name="guest-speaker"/></td>
+                <td class="orange">#15,000 <form action="/action_page.php"><input type="radio" name="guest-speaker"/></form></td>
+                <td  class="orange">#5,000 <form action="/action_page.php"><input type="radio" name="guest-speaker"/></form></td>
+                <td  class="orange">#10,000 <form action="/action_page.php"><input type="radio" name="guest-speaker"/></form></td>
+                <td  class="orange"><s>#0 </s> <form action="/action_page.php"><input type="radio" name="guest-speaker"/></form></td>
+              
               </tr>
               <tr>
                 <td>VIP</td>
-                <td class="orange">#1,000 <input type="radio" name="VIP"/></td>
-                <td  class="orange">#7,000 <input type="radio" name="VIP"/></td>
-                <td  class="orange">#11,000 <input type="radio" name="VIP"/></td>
-                <td  class="orange"><s>#0</s> <input type="radio" name="VIP"/></td>
+                
+                <td class="orange">#1,000 <form action="/action_page.php"><input type="radio" name="VIP"/></form></td>
+                <td  class="orange">#7,000 <form action="/action_page.php"><input type="radio" name="VIP"/></form></td>
+                <td  class="orange">#11,000 <form action="/action_page.php"><input type="radio" name="VIP"/></form></td>
+                <td  class="orange"><s>#0</s> <form action="/action_page.php"><input type="radio" name="VIP"/></form></td>
               </tr>
               <tr>
                 <td>Students</td>
-                <td class="orange">#500 <input type="radio" name="Students"/> </td>
-                <td  class="orange">#1,000 <input type="radio" name="Students"/></td>
-                <td  class="orange">#3,000 <input type="radio" name="Students"/></td>
-                <td  class="orange"><s>#0</s> <input type="radio" name="Students"/></td>
+                
+                <td class="orange">#500 <form action="/action_page.php"><input type="radio" name="Students"/></form> </td>
+                <td  class="orange">#1,000 <form action="/action_page.php"><input type="radio" name="Students"/></form></td>
+                <td  class="orange">#3,000 <form action="/action_page.php"><input type="radio" name="Students"/></form></td>
+                <td  class="orange"><s>#0</s> <form action="/action_page.php"><input type="radio" name="Students"/></form></td>
               </tr>
             </table>
            </div>
@@ -132,17 +175,21 @@
       
         <tr>
           <td>VIP</td>
-          <td class="orange">#1,000 <input type="radio" name="Launch-VIP"/></td>
-          <td  class="orange">#2,000 <input type="radio" name="Launch-VIP"/></td>
-          <td  class="orange">#1,000 <input type="radio" name="Launch-VIP"/></td>
-          <td  class="orange"><s>#0</s> <input type="radio" name="Launch-VIP"/></td>
+          
+          <td class="orange">#1,000 <form action="/action_page.php"><input type="radio" name="Launch-VIP"/></form></td>
+          <td  class="orange">#2,000 <form action="/action_page.php"><input type="radio" name="Launch-VIP"/></form></td>
+          <td  class="orange">#1,000 <form action="/action_page.php"><input type="radio" name="Launch-VIP"/></form></td>
+          <td  class="orange"><s>#0</s> <form action="/action_page.php"><input type="radio" name="Launch-VIP"/></form></td>
+        
         </tr>
         <tr>
           <td>Students</td>
-          <td class="orange">#1,000 <input type="radio" name="Lunch-students"/> </td>
-          <td  class="orange">#1,000 <input type="radio" name="Lunch-students"/></td>
-          <td  class="orange">#1,000 <input type="radio" name="Lunch-students"/></td>
-          <td  class="orange"><s>#0</s> <input type="radio" name="Lunch-students"/></td>
+          
+          <td class="orange">#1,000 <form action="/action_page.php"><input type="radio" name="Lunch-students"/></form> </td>
+          <td  class="orange">#1,000 <form action="/action_page.php"><input type="radio" name="Lunch-students"/></form></td>
+          <td  class="orange">#1,000 <form action="/action_page.php"><input type="radio" name="Lunch-students"/></form></td>
+          <td  class="orange"><s>#0</s> <form action="/action_page.php"><input type="radio" name="Lunch-students"/></form></td>
+        
         </tr>
       </table>
     </div>
@@ -156,8 +203,8 @@
 
         <footer>
           <div class="footer-1 bg-dark-ash">
-            <div class="center-item"><h6>Partners</h6></div>
-            <hr class="bg-dark-orange underline-main">
+            <div class="center-item"><h6 class="pt-4">Partners</h6></div>
+            <hr class="bg-dark-orange underline-main mt-4">
             <div class="partner-names">
               <p>Facebook</p>
               <p>Google</p>
@@ -169,25 +216,21 @@
 
           </div>
 
-          <div class="footer-2">
-
-            
-          </div>
-
           <div class="footer-container">
-            <div>
-              <span class="AfDev-logo">AfDEV</span>
+            <div class="ft-mr">
+              <a class="text-dark-ash" href="index.html"><span class="AfDev-logo">AfDEV</span></a>
               <span class="">Get Inspired @ AfDEV</span>
               <span class="d-block">Summit 2020</span>  
             </div>
 
-            <div class="">
+            <div class=" hide-bl-400">
               <span class="mobile-hide">AfDev Summit 2020 reserves the right to all delivered contents at summit.</span>
               <span class="d-block mobile-hide"> Call Ayankaa Nehemiah, also follow The Celebration Hub.</span>
             </div>
                 
           </div>
         </footer>
+
 
         
          <!-- ****************************************************Optional JavaScript********************************** -->
