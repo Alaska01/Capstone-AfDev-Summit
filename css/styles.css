@@ -119,7 +119,7 @@ a:hover {
 }
 
 .computer-container-hello {
-  height: 25vh;
+  height: 30vh;
   background-image:
     linear-gradient(
       to right bottom,
@@ -322,8 +322,8 @@ a:hover {
     }
 
     .computer-container-hello h1 {
-      font-size: 40px;
-      font-weight: 400;
+      font-size: 30px;
+      font-weight: 300;
       padding: 0 10px;
       box-sizing: border-box;
     }
@@ -355,9 +355,10 @@ a:hover {
   }
 
   .logo-container {
-    padding-left: 5%;
+    padding-left: 1%;
     width: 30%;
     box-sizing: border-box;
+    display: inline-block;
   }
 
   .navigation-links-container {
@@ -383,7 +384,7 @@ a:hover {
   }
 
   .computer-container-hello {
-    height: 25vh;
+    height: 35vh;
     background-image:
       linear-gradient(
         to right bottom,
@@ -502,7 +503,6 @@ a:hover {
   .featured-speakers-container {
     width: 70%;
     margin: 0 auto;
-    background-color: indigo;
   }
 
   .speaker-img-container {
@@ -603,6 +603,11 @@ a:hover {
 
   .mobile-hide {
     display: none;
+  }
+
+  .ubuntu {
+    margin-left: 15%;
+    margin-bottom: 5%;
   }
 
   .computer-container-hello {
