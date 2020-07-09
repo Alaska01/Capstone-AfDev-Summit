@@ -11,7 +11,7 @@ This HTML & CSS Capstone Project is an online fictitious Developer website calle
       [Flex]
       [Grid]
 
-[LIVE DEMO LINK](https://rawcdn.githack.com/Alaska01/Capstone-AfDev-Summit/29c9b0fe8bff4c9c2272b2eba82f493a8b32ef38/index.html)
+[LIVE DEMO LINK](https://rawcdn.githack.com/Alaska01/Capstone-AfDev-Summit/3e5a9d73b3df5b279389b2991721a56d8e34745f/index.html)
 
 [LIVE DEMO LINK CAPSTONE VIDEO PRESENTATION](https://www.loom.com/share/5e3259c7a7a34067addc2d629f70f25f)
 
@@ -49,7 +49,7 @@ $ cd Devsummit
 ```
 
 ## Author
-👤 **Aye Daniel A***
+👤 **Aye Daniel A**
 
 - [Github](https://github.com/Alaska01)
 - [Twitter](https://twitter.com/AyeAsoo)
