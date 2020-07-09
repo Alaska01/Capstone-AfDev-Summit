@@ -11,7 +11,7 @@ This HTML & CSS Capstone Project is an online fictitious Developer website calle
       [Flex]
       [Grid]
 
-[LIVE DEMO LINK](https://raw.githack.com/Alaska01/Capstone-AfDev-Summit/capstone-branch/index.html)
+[LIVE DEMO LINK](https://rawcdn.githack.com/Alaska01/Capstone-AfDev-Summit/29c9b0fe8bff4c9c2272b2eba82f493a8b32ef38/index.html)
 
 [LIVE DEMO LINK CAPSTONE VIDEO PRESENTATION](https://www.loom.com/share/5e3259c7a7a34067addc2d629f70f25f)
 
