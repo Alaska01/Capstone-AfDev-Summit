@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.menu-position {
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+
+.hero-section {
+  height: auto;
+  background-image:
+    linear-gradient(
+      to left top,
+      rgba(247, 247, 247, 0.8),
+      rgba(211, 211, 222, 0.8)
+    ),
+    url(../images/house-image.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  padding: 2rem;
+}
+
+.select-tickets {
+  font-size: 1.5rem;
+}
+
+.main-head {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.main-head::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+.step {
+  width: 30%;
+  margin: 2rem auto;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 0.5px solid #272a31;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.step-list {
+  font-weight: 700;
+}
+
+.step .step-list {
+  display: inline;
+}
+
+.table-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.table {
+  width: 100%;
+  border: 5px dashed #ec5242;
+  cursor: pointer;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 0.7rem;
+  font-size: 1rem;
+}
+
+tr:nth-child(even) {
+  background: white;
+  opacity: 0.7;
+}
+
+tr:nth-child(even):hover {
+  background: white;
+  opacity: 1;
+}
+
+td .orange {
+  font-weight: 700;
+}
+
+/* Lunch Section style */
+
+.lunch-section {
+  padding: 1rem;
+}
+
+.lunch-table {
+  border: 1px solid #d3d3d3;
+}
+
+.step2 {
+  border: 0.5px solid #d3d3d3;
+}
+
+button {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.checkout {
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 30%;
+  height: 20%;
+  color: white;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-nav {
+    display: block;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .step {
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .table-wrapper {
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .checkout {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    width: 50%;
+    height: 15%;
+    color: white;
+    border-radius: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  @media only screen and (max-width: 320px) {
+    .tickets-table {
+      width: 100%;
+      cursor: pointer;
+      padding: 0;
+      margin-left: -10%;
+    }
+  }
+
+  .step {
+    width: 75%;
+    font-size: 0.8rem;
+    padding: 0.6rem;
+    border-radius: 10px;
+    border: 0.5px solid #272a31;
+    list-style-type: none;
+    cursor: pointer;
+  }
+
+  .step li {
+    display: block;
+    margin-left: 20%;
+    font-size: 10px;
+  }
+
+  .step-list {
+    font-weight: 400;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  th,
+  td {
+    font-size: 0.44rem;
+  }
+
+  .table {
+    width: 100%;
+    border: 2px dashed #ec5242;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .tickets-table {
+    width: 100%;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 auto;
+  }
+}

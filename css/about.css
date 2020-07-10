@@ -1,0 +1,236 @@
+.container-grid {
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 350px;
+  grid-gap: 15px;
+  padding: 10px;
+}
+
+.box-1 {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(39, 42, 49, 0.8),
+      rgba(211, 211, 222, 0.8)
+    ),
+    url(../images/welcome1.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+.box-2 {
+  grid-column: 2/-1;
+  grid-row: 1/-1;
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(39, 42, 49, 0.8),
+      rgba(211, 211, 222, 0.8)
+    ),
+    url(../images/welcome2.JPG);
+  background-size: cover;
+  background-position: right;
+}
+
+.delegates-2019 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.m-program-about {
+  margin-top: 0;
+}
+
+.main-mobile-program-about {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    );
+}
+
+.attend-summit-about {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+
+.date-afdev p {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.text-width-discription {
+  width: 70%;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.about-chairperson {
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 15px 0;
+}
+
+.lecture-items-wrapper {
+  width: 100%;
+}
+
+.container-AfDev-Summit div {
+  padding-left: 20%;
+  box-sizing: border-box;
+}
+
+.border-p {
+  margin-left: -40%;
+}
+
+.welcome-text {
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+.main-cont-wrapper h6 {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.AfDev-logo {
+  display: inline-block;
+  border-radius: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  margin-top: 3px;
+  border: 3px solid gray;
+}
+
+.h6-border {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.box-a {
+  grid-column: 1/-2;
+  grid-row: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-b {
+  grid-column: 2/-1;
+  grid-row: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .container-grid {
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 500px) {
+    .about-chairperson {
+      width: 90%;
+    }
+
+    .attend-summit-about {
+      margin: 0 auto;
+      width: 85%;
+    }
+
+    .main-cont-wrapper {
+      padding-top: 15px;
+    }
+
+    .main-cont-wrapper h6 {
+      font-size: 14px;
+    }
+
+    .underline-main {
+      width: 6%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      color: red;
+    }
+
+    .container-AfDev-Summit div {
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+
+    .border-p {
+      margin-left: 0;
+    }
+
+    .text-width-discription {
+      width: 96%;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+  }
+
+  .container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    height: auto;
+    grid-gap: 10px;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .box-1 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-image:
+      linear-gradient(
+        to right bottom,
+        rgba(39, 42, 49, 0.8),
+        rgba(211, 211, 222, 0.8)
+      ),
+      url(../images/welcome1.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+  }
+
+  .box-2 {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    background-image:
+      linear-gradient(
+        to right bottom,
+        rgba(39, 42, 49, 0.8),
+        rgba(211, 211, 222, 0.8)
+      ),
+      url(../images/welcome2.JPG);
+    background-size: cover;
+    background-position: right;
+    height: 350px;
+  }
+
+  .main-cont-wrapper h6 {
+    font-size: 23px;
+    padding-top: 7px;
+  }
+}
